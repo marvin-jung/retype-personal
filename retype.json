@@ -27,6 +27,6 @@
   ],
   "footer":
   {
-    "copyright": "&copy; Copyright {{ year }}. All rights reserved."
+    "copyright": "&copy; Copyright 2020 - {{ year }} Marvin Jung, All rights reserved."
   }
 }

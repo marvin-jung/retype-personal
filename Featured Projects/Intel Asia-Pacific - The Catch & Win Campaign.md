@@ -4,7 +4,7 @@ icon: megaphone
 
 # Intel Asia-Pacific : The Catch & Win Campaign
 
-++- Team 14
+++- Hult SF MsBA2 - Team 14 
 
 - Percival Sibanda
 - Jisung Jung

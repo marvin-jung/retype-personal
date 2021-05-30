@@ -4,7 +4,7 @@ icon: device-desktop
 
 # Windows ? or Mac ?
 
-++- Team 15
+++- Hult SF MsBA2 - Team 15
 
 - Nimisha Patel
 - Pimkarn Mekpruksawong

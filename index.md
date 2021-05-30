@@ -4,7 +4,7 @@ icon: clippy
 
 # Index
 
-The entire index of projects
+The entire index of data science and programming language projects
 
 ||| Python
 
@@ -25,5 +25,5 @@ The entire index of projects
 |||
 
 !!!warning Notice
-Original script download not available temporary
+Original script download is not available temporary
 !!!

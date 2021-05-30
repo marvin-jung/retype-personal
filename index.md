@@ -14,6 +14,7 @@ The entire index of projects
 ||| R
 - [Air France Business Case](https://marvin-jung.github.io/portfolio/more_projects/air_france_business_case/)
 - [NLP Analysis](https://marvin-jung.github.io/portfolio/more_projects/nlp_analysis/)
+- [Twitter Text Analytics](https://marvin-jung.github.io/portfolio/featured_projects/twitter_text_analytics/)
 ||| Tableau
 - [NUS - Visual Data Storytelling](https://marvin-jung.github.io/portfolio/more_projects/nus_-_visual_data_storytelling/)
 - [Superstore Interactive Dashboard](https://marvin-jung.github.io/portfolio/featured_projects/superstore_interactive_dashboard/)

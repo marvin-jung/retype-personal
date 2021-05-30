@@ -5,7 +5,6 @@ icon: share-android
 # Presenting the Data Strategy for 23andMe
 
 ++- Hult SF MsBA1 - Team 23
-
 - Pedro Guarda Chinen
 - Kapil Seth
 - Jisung Jung

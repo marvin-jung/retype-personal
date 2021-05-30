@@ -4,6 +4,8 @@ icon: hubot
 
 # Yoshimi Battles the Pink Robot
 
+Jisung Jung
+
 Users can play this Text Adventure Game in the [following notebook](https://colab.research.google.com/drive/1Zlr5qVcj5Pvwz4yfTi3z39porB4RMJjG?usp=sharing)
 
 Original Python script - [Yoshimi-battles-the-pink-robot.py](scripts/Yoshimi-battles-the-pink-robot.py)

@@ -5,13 +5,11 @@ icon: device-desktop
 # Windows ? or Mac ?
 
 ++- Hult SF MsBA2 - Team 15
-
 - Nimisha Patel
 - Pimkarn Mekpruksawong
 - Pedro Guarda Chinen
 - Jisung Jung 
 - Olusola Scott-Ogunkoya
-
 +++
 
 Original Notebook: [Windows or Mac.ipynb](scripts/Windows-or-Mac.zip)

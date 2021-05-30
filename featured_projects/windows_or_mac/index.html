@@ -1,0 +1,1418 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="turbo-cache-control" content="no-cache">
+
+    <title>Windows ? or Mac ?</title>
+
+    <meta name="description" content="Nimisha Patel" />
+
+    <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
+
+    <link href="/resources/css/retype.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="/resources/js/config.js" defer></script>
+    <script type="text/javascript" src="/resources/js/prism.js" defer></script>
+    <script type="text/javascript" src="/resources/js/retype.js" defer></script>
+</head>
+    <body>
+        <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
+    <div class="absolute bottom-0 left-0 bg-gray-100 dark:bg-dark-800" style="top: 5rem; right: 50%"></div>
+
+    <header id="docs-site-header" class="sticky top-0 z-30 flex w-full h-16 bg-white border-b border-gray-200 md:h-20 dark:bg-dark-850 dark:border-dark-650">
+    <div class="container relative flex items-center justify-between flex-grow pr-6 md:justify-start">
+        <!-- Mobile menu button skeleton -->
+        <button v-cloak class="skeleton docs-mobile-menu-button flex items-center justify-center flex-shrink-0 overflow-hidden dark:text-white focus:outline-none rounded-full w-10 h-10 ml-3.5 md:hidden"><svg xmlns="http://www.w3.org/2000/svg" class="mb-px flex-shrink-0" width="24" height="24" viewBox="0 0 24 24" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor"><path d="M2 4h20v2H2zM2 11h20v2H2zM2 18h20v2H2z"></path></g></svg></button>
+        <div v-cloak id="docs-sidebar-toggle"></div>
+
+        <!-- Logo -->
+        <div class="flex items-center justify-between h-full py-2 md:w-75">
+            <div class="flex items-center px-2 md:px-6">
+                <span id="docs-site-logo" class="dark:text-white text-2xl leading-snug font-semibold line-clamp-1 md:line-clamp-2">
+                    <a href="/">Project Name</a>
+                </span>
+                <span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">Docs</span>
+            </div>
+
+            <span class="hidden h-8 border-r md:inline-block dark:border-dark-650"></span>
+        </div>
+
+        <div class="flex justify-between md:flex-grow">
+            <!-- Top Nav -->
+            <nav class="hidden md:flex">
+    <ul class="flex flex-col mb-4 md:pl-16 md:mb-0 md:flex-row md:items-center">
+        <li class="md:mr-6">
+            <a class="block py-2 text-sm text-gray-400 whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="https://retype.com/guides/getting_started/">Getting Started</a>
+        </li>
+    </ul>
+</nav>
+
+            <!-- Header Right Skeleton -->
+            <div v-cloak class="flex justify-end flex-grow skeleton">
+
+                <!-- Search input mock -->
+                <div class="relative hidden w-40 lg:block lg:max-w-sm lg:ml-auto">
+                    <div class="absolute flex items-center justify-center h-full pl-3 dark:text-dark-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon-base" width="16" height="16" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation"  style="margin-bottom: 1px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
+                    </div>
+
+                    <input class="w-full h-10 transition-colors duration-200 ease-in bg-gray-200 border border-transparent rounded md:text-sm hover:bg-white hover:border-gray-300 focus:outline-none focus:bg-white focus:border-gray-500 dark:bg-dark-600 dark:border-dark-600 placeholder-gray-400 dark:placeholder-dark-400"
+                    style="padding: 0.625rem 0.75rem 0.625rem 2rem" type="text" placeholder="Search docs" />
+                </div>
+
+                <!-- Mobile search button mock -->
+                <div class="flex items-center justify-center w-10 h-10 lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 icon-base" width="20" height="20" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation"  style="margin-bottom: 0px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
+                </div>
+
+                <!-- Dark mode switch placehokder -->
+                <div class="w-10 h-10 lg:ml-2"></div>
+
+                <!-- History button mock -->
+                <div class="flex items-center justify-center w-10 h-10" style="margin-right: -0.625rem;">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 icon-base" width="22" height="22" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation"  style="margin-bottom: 0px;"><g fill="currentColor" ><g ><path d="M12.01 6.01c-.55 0-1 .45-1 1V12a1 1 0 00.4.8l3 2.22a.985.985 0 001.39-.2.996.996 0 00-.21-1.4l-2.6-1.92V7.01c.02-.55-.43-1-.98-1z"></path><path d="M12.01 1.91c-5.33 0-9.69 4.16-10.05 9.4l-.29-.26a.997.997 0 10-1.34 1.48l1.97 1.79c.19.17.43.26.67.26s.48-.09.67-.26l1.97-1.79a.997.997 0 10-1.34-1.48l-.31.28c.34-4.14 3.82-7.41 8.05-7.41 4.46 0 8.08 3.63 8.08 8.09s-3.63 8.08-8.08 8.08c-2.18 0-4.22-.85-5.75-2.4a.996.996 0 10-1.42 1.4 10.02 10.02 0 007.17 2.99c5.56 0 10.08-4.52 10.08-10.08.01-5.56-4.52-10.09-10.08-10.09z"></path></g></g></svg>
+                </div>
+            </div>
+
+            <div v-cloak class="flex items-center justify-end flex-grow">
+                <div id="docs-mobile-search-button"></div>
+                <doc-search-desktop></doc-search-desktop>
+
+                <doc-theme-switch class="lg:ml-2"></doc-theme-switch>
+                <doc-history></doc-history>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+    <div class="container relative flex bg-white">
+        <!-- Sidebar Skeleton -->
+<div v-cloak class="fixed flex flex-col flex-shrink-0 duration-300 ease-in-out bg-gray-100 border-gray-200 sidebar top-20 w-75 border-r h-screen md:sticky transition-transform skeleton dark:bg-dark-800 dark:border-dark-650">
+
+    <!-- Render this div, if config.showSidebarFilter is `true` -->
+    <div class="flex items-center h-16 px-6">
+        <input class="w-full h-8 px-3 py-2 transition-colors duration-200 ease-linear bg-white border border-gray-200 rounded shadow-none text-sm focus:outline-none focus:border-gray-600 dark:bg-dark-600 dark:border-dark-600" type="text" placeholder="Filter" />
+    </div>
+
+    <div class="pl-6 mb-4 mt-1">
+        <div class="w-32 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+        <div class="w-48 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+        <div class="w-40 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+        <div class="w-32 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+        <div class="w-48 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+        <div class="w-40 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+    </div>
+
+    <div class="flex-shrink-0 mt-auto bg-transparent dark:border-dark-650">
+        <a
+    class="flex items-center justify-center flex-nowrap h-16 text-gray-400 dark:text-dark-400 hover:text-gray-700 dark:hover:text-dark-300 transition-colors duration-150 ease-in"
+    target="_blank"
+    href="https://retype.com"
+    rel="noopener"
+>
+    <span class="text-xs whitespace-nowrap">Powered by</span>
+    <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" fill="currentColor" width="96" height="20" overflow="visible"><path d="M0 0v20h13.59V0H0zm11.15 17.54H2.44V2.46h8.71v15.08zM15.8 20h2.44V4.67L15.8 2.22zM20.45 6.89V20h2.44V9.34z"/><g><path d="M40.16 8.44c0 1.49-.59 2.45-1.75 2.88l2.34 3.32h-2.53l-2.04-2.96h-1.43v2.96h-2.06V5.36h3.5c1.43 0 2.46.24 3.07.73s.9 1.27.9 2.35zm-2.48 1.1c.26-.23.38-.59.38-1.09 0-.5-.13-.84-.4-1.03s-.73-.28-1.39-.28h-1.54v2.75h1.5c.72 0 1.2-.12 1.45-.35zM51.56 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92h4.74v1.83h-6.79V5.36h6.64zM60.09 7.15v7.48h-2.06V7.15h-2.61V5.36h7.28v1.79h-2.61zM70.81 14.64h-2.06v-3.66l-3.19-5.61h2.23l1.99 3.45 1.99-3.45H74l-3.19 5.61v3.66zM83.99 6.19c.65.55.97 1.4.97 2.55s-.33 1.98-1 2.51-1.68.8-3.04.8h-1.23v2.59h-2.06V5.36h3.26c1.42 0 2.45.28 3.1.83zm-1.51 3.65c.25-.28.37-.69.37-1.22s-.16-.92-.48-1.14c-.32-.23-.82-.34-1.5-.34H79.7v3.12h1.38c.68 0 1.15-.14 1.4-.42zM95.85 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92H96v1.83h-6.79V5.36h6.64z"/></g></svg>
+</a>
+
+    </div>
+</div>
+
+<!-- Sidebar component -->
+<doc-sidebar v-cloak>
+    <template #sidebar-footer>
+        <div
+            class="flex-shrink-0 mt-auto border-t md:bg-transparent md:border-none dark:border-dark-650"
+        >
+
+            <div class="py-3 px-6 md:hidden border-b dark:border-dark-650">
+                <nav>
+                    <ul class="flex flex-wrap justify-center items-center">
+                        <li class="mr-6">
+                            <a class="block py-1 text-sm whitespace-nowrap transition-colors duration-200 ease-linear text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://retype.com/guides/getting_started/">Getting Started</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <a
+    class="flex items-center justify-center flex-nowrap h-16 text-gray-400 dark:text-dark-400 hover:text-gray-700 dark:hover:text-dark-300 transition-colors duration-150 ease-in"
+    target="_blank"
+    href="https://retype.com"
+    rel="noopener"
+>
+    <span class="text-xs whitespace-nowrap">Powered by</span>
+    <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" fill="currentColor" width="96" height="20" overflow="visible"><path d="M0 0v20h13.59V0H0zm11.15 17.54H2.44V2.46h8.71v15.08zM15.8 20h2.44V4.67L15.8 2.22zM20.45 6.89V20h2.44V9.34z"/><g><path d="M40.16 8.44c0 1.49-.59 2.45-1.75 2.88l2.34 3.32h-2.53l-2.04-2.96h-1.43v2.96h-2.06V5.36h3.5c1.43 0 2.46.24 3.07.73s.9 1.27.9 2.35zm-2.48 1.1c.26-.23.38-.59.38-1.09 0-.5-.13-.84-.4-1.03s-.73-.28-1.39-.28h-1.54v2.75h1.5c.72 0 1.2-.12 1.45-.35zM51.56 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92h4.74v1.83h-6.79V5.36h6.64zM60.09 7.15v7.48h-2.06V7.15h-2.61V5.36h7.28v1.79h-2.61zM70.81 14.64h-2.06v-3.66l-3.19-5.61h2.23l1.99 3.45 1.99-3.45H74l-3.19 5.61v3.66zM83.99 6.19c.65.55.97 1.4.97 2.55s-.33 1.98-1 2.51-1.68.8-3.04.8h-1.23v2.59h-2.06V5.36h3.26c1.42 0 2.45.28 3.1.83zm-1.51 3.65c.25-.28.37-.69.37-1.22s-.16-.92-.48-1.14c-.32-.23-.82-.34-1.5-.34H79.7v3.12h1.38c.68 0 1.15-.14 1.4-.42zM95.85 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92H96v1.83h-6.79V5.36h6.64z"/></g></svg>
+</a>
+
+        </div>
+    </template>
+</doc-sidebar>
+
+
+        <div class="flex-grow min-w-0 dark:bg-dark-850">
+            <!-- Render "toolbar" template here on api pages --><!-- Render page content -->
+            <div class="flex">
+    <div class="flex-grow min-w-0 px-6 md:px-16">
+        <main class="relative pt-6 pb-16">
+            <div class="docs-markdown" id="docs-content">
+                <!-- Rendered if sidebar right is enabled -->
+                <div id="docs-sidebar-right-toggle"></div>
+               
+                <!-- Page content  -->
+<doc-anchor-target id="windows-or-mac" class="break-words">
+    <h1>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#windows-or-mac">#</doc-anchor-trigger>
+        <span>Windows ? or Mac ?</span>
+    </h1>
+</doc-anchor-target>
+<doc-panel id="team-15" collapsed>
+<template #title>Team 15</template>
+<ul>
+<li>Nimisha Patel</li>
+<li>Pimkarn Mekpruksawong</li>
+<li>Pedro Guarda Chinen</li>
+<li>Jisung Jung</li>
+<li>Olusola Scott-Ogunkoya</li>
+</ul>
+</doc-panel>
+<p>Original Notebook: <a href="scripts/Windows-or-Mac.zip">Windows or Mac.ipynb</a></p>
+<doc-anchor-target id="introduction">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#introduction">#</doc-anchor-trigger>
+        <span>Introduction</span>
+    </h2>
+</doc-anchor-target>
+<p><strong>Do personality types affect behavior in consumer purchases?</strong></p>
+<p>We garnered ~140 responses with questions from the perspective of the Big Five Personality Traits and the Hult DNA.</p>
+<p>The <strong>Big Five</strong> Personality Traits is a common survey that allows us to associate certain behaviors to the following categories:</p>
+<ul>
+<li><strong>Extroversion</strong> is the personality trait of seeking fulfillment from sources outside the self or in community.</li>
+<li><strong>Agreeableness</strong> reflects how much individuals adjust their behavior to suit others.</li>
+<li><strong>Conscientiousness</strong> is the personality trait of being honest and hardworking.</li>
+<li><strong>Neurotic</strong> is the personality trait of being emotional.</li>
+<li><strong>Openness</strong> is the personality trait of seeking new experiences and intellectual pursuits.</li>
+</ul>
+<hr />
+<p><strong>Hult DNA</strong> is comprised of 3 competencies:</p>
+<ul>
+<li><strong>Thinking Big</strong>
+<ul>
+<li>Shows self awareness, embraces change, and demonstrates dynamic thinking</li>
+</ul>
+</li>
+<li><strong>Communicating</strong>
+<ul>
+<li>Speak and listen carefully, influences confidently, and present ideas effectively</li>
+</ul>
+</li>
+<li><strong>Team Building</strong>
+<ul>
+<li>Foster collaborative relationships, inspire productivity, and resolve conflict constructively</li>
+</ul>
+</li>
+</ul>
+<p><strong>Objective</strong></p>
+<p>Analyze the current demographic and behaviors to find Apple&#x27;s current customers and next steps for future campaigns based on their personality traits.</p>
+<doc-anchor-target id="code">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#code">#</doc-anchor-trigger>
+        <span>Code</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="set-up">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#set-up">#</doc-anchor-trigger>
+        <span>Set-Up</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-python"><code v-pre class="language-python">########################################
+# importing packages
+########################################
+import numpy as np                                      # mathematical essentials
+import pandas            as pd                          # data science essentials
+import matplotlib.pyplot as plt                         # fundamental data visualization
+import seaborn           as sns                         # enhanced visualizations
+from sklearn.preprocessing import StandardScaler        # standard scaler
+from sklearn.decomposition import PCA                   # pca
+from scipy.cluster.hierarchy import dendrogram, linkage # dendrograms
+from sklearn.cluster         import KMeans              # k-means clustering
+
+# loading data
+survey_data = pd.read_excel('survey_data.xlsx')
+survey_df = survey_data.drop('surveyID', axis = 1)</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="helper-functions">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#helper-functions">#</doc-anchor-trigger>
+        <span>Helper Functions</span>
+    </h4>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-python"><code v-pre class="language-python">########################################
+# inertia
+########################################
+def interia_plot(data, max_clust = 50):
+    &quot;&quot;&quot;
+PARAMETERS
+----------
+data      : DataFrame, data from which to build clusters. Dataset should be scaled
+max_clust : int, maximum of range for how many clusters to check interia, default 50
+    &quot;&quot;&quot;
+
+    ks = range(1, max_clust)
+    inertias = []
+
+    for k in ks:
+        # INSTANTIATING a kmeans object
+        model = KMeans(n_clusters = k)
+
+        # FITTING to the data
+        model.fit(data)
+
+        # append each inertia to the list of inertias
+        inertias.append(model.inertia_)
+
+    # plotting ks vs inertias
+    fig, ax = plt.subplots(figsize = (12, 8))
+    plt.plot(ks, inertias, '-o')
+
+    # labeling and displaying the plot
+    plt.xlabel('number of clusters, k')
+    plt.ylabel('inertia')
+    plt.xticks(ks)
+    plt.show()
+
+########################################
+# scree_plot
+########################################
+def scree_plot(pca_object, export = False):
+    # building a scree plot
+
+    # setting plot size
+    fig, ax = plt.subplots(figsize=(10, 8))
+    features = range(pca_object.n_components_)
+
+    # developing a scree plot
+    plt.plot(features,
+             pca_object.explained_variance_ratio_,
+             linewidth = 2,
+             marker = 'o',
+             markersize = 10,
+             markeredgecolor = 'black',
+             markerfacecolor = 'grey')
+
+    # setting more plot options
+    plt.title('Scree Plot')
+    plt.xlabel('PCA feature')
+    plt.ylabel('Explained Variance')
+    plt.xticks(features)
+
+    if export == True:
+    
+        # exporting the plot
+        plt.savefig('./analysis_images/top_customers_correlation_scree_plot.png')
+        
+    # displaying the plot
+    plt.show()</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="cleaning-up-data">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#cleaning-up-data">#</doc-anchor-trigger>
+        <span>Cleaning up Data</span>
+    </h4>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-python"><code v-pre class="language-python"># subset the demographics of survey users
+dem_columns = ['What program are you in?', 'What is your age?', 'Gender', 
+               'What is your nationality? ', 'What is your ethnicity?']
+dem_data = survey_data.loc[ : , dem_columns]
+survey_df = survey_df.drop(dem_columns, axis = 1)
+
+# cleaning the nationalities to avoid repeated values in different formats
+dem_data['What is your nationality? '] = dem_data['What is your nationality? '].str.lower().str.title()
+
+#############################################
+# clean the demographics - ethnicities column
+#############################################
+indian = ['Indian', 'Indian.']
+china = ['China', 'Chinese']
+german = ['German', 'Germany']
+peruvian = ['Peruvian', 'Peru']
+colombian = ['Colombian', 'Colombia']
+korean = ['Republic of Korea', 'South Korea', 'Korea']
+american = ['Usa', 'American']
+brazilian = ['Brazilian', 'Brazil']
+nigeria = ['Nigerian', 'Nigeria']
+russian = ['Russian', 'Russia']
+spanish = ['Spain', 'Spanish']
+indonesian = ['Indonesia', 'Indonesian']
+congo = ['Congolease', 'Congolese (Dr Congo)']
+filipino = ['Philippines', 'Filipino', 'Filipino ']
+ecuador = ['Ecuador', 'Ecuadorian']
+canada = ['Canada', 'Canadian']
+czech = ['Czech', 'Czech Republic']
+
+nationalities = []
+
+for nat in dem_data['What is your nationality? ']:
+    if nat in indian:
+        nationalities.append('Indian')
+    elif nat in china:
+        nationalities.append('Chinese')
+    elif nat in german:
+        nationalities.append('German')
+    elif nat in peruvian:
+        nationalities.append('Peruvian')
+    elif nat in colombian:
+        nationalities.append('Colombian')
+    elif nat in korean:
+        nationalities.append('Korean')
+    elif nat in american:
+        nationalities.append('American')
+    elif nat in brazilian:
+        nationalities.append('Brazilian')
+    elif nat in nigeria:
+        nationalities.append('Nigerian')
+    elif nat in russian:
+        nationalities.append('Russian')
+    elif nat in spanish:
+        nationalities.append('Spanish')
+    elif nat in indonesian:
+        nationalities.append('Indonesian')
+    elif nat in congo:
+        nationalities.append('Congolese')
+    elif nat in filipino:
+        nationalities.append('Filipino')
+    elif nat in ecuador:
+        nationalities.append('Ecuador')
+    elif nat in canada:
+        nationalities.append('Canada')
+    elif nat in czech:
+        nationalities.append('Czech')
+    else:
+        nationalities.append(nat)
+
+dem_data['What is your nationality? '] = nationalities</code></pre>
+</doc-codeblock></div>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-python"><code v-pre class="language-python"># laptop buying habits
+laptop_columns = ['What laptop do you currently have?',
+                  'What laptop would you buy in next assuming if all laptops cost the same?']
+laptop_data = survey_data.loc[ : , laptop_columns]
+survey_df = survey_df.drop(laptop_columns, axis = 1)</code></pre>
+</doc-codeblock></div>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-python"><code v-pre class="language-python"># remove replicated columns
+rep_col = ['Respond effectively to multiple priorities.1',
+           'Take initiative even when circumstances, objectives, or rules aren\'t clear.1',
+           'Encourage direct and open discussions.1']
+survey_df = survey_df.drop(rep_col, axis = 1)</code></pre>
+</doc-codeblock></div>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-python"><code v-pre class="language-python">#######################################################
+# calculate the score of the big personality traits
+#######################################################
+
+def calc_extrovert(data):
+    data.iloc[ : , 1] = -1 * data.iloc[ : , 1]
+    data.iloc[ : , 3] = -1 * data.iloc[ : , 3]
+    data.iloc[ : , 5] = -1 * data.iloc[ : , 5]
+    data.iloc[ : , 7] = -1 * data.iloc[ : , 7]
+    data.iloc[ : , 9] = -1 * data.iloc[ : , 9]
+    
+    scores = data.sum(axis = 1)
+    return 20 + scores
+
+def calc_agreeable(data):
+    data.iloc[ : , 0] = -1 * data.iloc[ : , 0]
+    data.iloc[ : , 2] = -1 * data.iloc[ : , 2]
+    data.iloc[ : , 4] = -1 * data.iloc[ : , 4]
+    data.iloc[ : , 6] = -1 * data.iloc[ : , 6]
+    
+    scores = data.sum(axis = 1)
+    return 14 + scores
+
+def calc_conscientious(data):
+    data.iloc[ : , 1] = -1 * data.iloc[ : , 1]
+    data.iloc[ : , 3] = -1 * data.iloc[ : , 3]
+    data.iloc[ : , 5] = -1 * data.iloc[ : , 5]
+    data.iloc[ : , 7] = -1 * data.iloc[ : , 7]
+    
+    scores = data.sum(axis = 1)
+    return 14 + scores
+
+def calc_neurotic(data):
+    data.iloc[ : , 0] = -1 * data.iloc[ : , 0]
+    data.iloc[ : , 2] = -1 * data.iloc[ : , 2]
+    data.iloc[ : , 4] = -1 * data.iloc[ : , 4]
+    data.iloc[ : , 5] = -1 * data.iloc[ : , 5]
+    data.iloc[ : , 6] = -1 * data.iloc[ : , 6]
+    data.iloc[ : , 7] = -1 * data.iloc[ : , 7]
+    data.iloc[ : , 8] = -1 * data.iloc[ : , 8]
+    data.iloc[ : , 9] = -1 * data.iloc[ : , 9]
+
+    scores = data.sum(axis = 1)
+    return 38 + scores
+
+def calc_open(data):
+    data.iloc[ : , 1] = -1 * data.iloc[ : , 9]
+    data.iloc[ : , 3] = -1 * data.iloc[ : , 9]
+    data.iloc[ : , 6] = -1 * data.iloc[ : , 9]
+
+    scores = data.sum(axis = 1)
+    return 8 + scores</code></pre>
+</doc-codeblock></div>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-python"><code v-pre class="language-python">big_five_columns = ['Extrovert', 'Agreeable', 'Conscientious', 'Neurotic', 'Open']
+
+# indexes of the questions in survey_df relation to big five
+extrovert_idx = [0, 10, 5, 15, 20, 25, 30, 35, 40, 45]
+agreeable_idx = [1, 6, 11, 16, 21, 26, 31, 36, 41, 46]
+conscientious_idx = [2, 7, 12, 17, 22, 27, 32, 37, 42, 47]
+neurotic_idx = [3, 8, 13, 18, 23, 28, 33, 38, 43, 48]
+open_idx = [4, 9, 14, 19, 24, 29, 34, 39, 44, 49]
+
+# subset the questions into dataframes
+extrovert_df = survey_df.iloc[ : , extrovert_idx]
+agreeable_df = survey_df.iloc[ : , agreeable_idx]
+conscientious_df = survey_df.iloc[ : , conscientious_idx]
+neurotic_df = survey_df.iloc[ : , neurotic_idx]
+open_df = survey_df.iloc[ : , open_idx]
+
+# calculate the rows of each score
+extrovert_score = calc_extrovert(extrovert_df.copy())
+agreeable_score = calc_agreeable(agreeable_df.copy())
+conscientious_score = calc_conscientious(conscientious_df.copy())
+neurotic_score = calc_neurotic(neurotic_df.copy())
+open_score = calc_open(open_df.copy())
+
+# concat the scores into a new data frame
+big_five_data = pd.concat([extrovert_score, agreeable_score, 
+                           conscientious_score, neurotic_score,
+                           open_score], axis = 1)
+big_five_data.columns = big_five_columns</code></pre>
+</doc-codeblock></div>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-python"><code v-pre class="language-python">hult_dna_col = ['Thinking', 'Communicating', 'Team-Building']
+
+# indexes of the questions in survey_df relation to hult
+survey_hult_dna = survey_df.iloc[ : , 50: ]
+think_idx = [0, 1, 2, 3, 4, 5]
+communicate_idx = [6, 7, 8, 11, 13]
+team_idx = [9, 10, 12, 14, 15, 16, 17]
+
+# subset the questions into dataframes
+think_df = survey_hult_dna.iloc[ : , think_idx]
+communicate_df = survey_hult_dna.iloc[ : , communicate_idx]
+team_df = survey_hult_dna.iloc[ : , team_idx]
+
+# calculate the rows of each score
+think_df.iloc[ : , 1] = -1 * think_df.iloc[ : , 1]
+communicate_df.iloc[ : , 2] = -1 * communicate_df.iloc[ : , 2]
+team_df.iloc[ : , 2] = -1 * team_df.iloc[ : , 2]
+
+think_score = 5 + think_df.sum(axis = 1)
+communicate_score = 10 + communicate_df.sum(axis = 1)
+team_score = team_df.sum(axis = 1)
+
+# concat the scores into a new data frame
+hult_dna_data = pd.concat([think_score, communicate_score, 
+                           team_score], axis = 1)
+
+hult_dna_data.columns = hult_dna_col</code></pre>
+</doc-codeblock></div>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">/opt/anaconda3/lib/python3.8/site-packages/pandas/core/indexing.py:1842: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  self.obj[item_labels[indexer[info_axis]]] = value</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="scaling-the-survey">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#scaling-the-survey">#</doc-anchor-trigger>
+        <span>Scaling the Survey</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-python"><code v-pre class="language-python"># INSTANTIATING a StandardScaler() object
+scaler = StandardScaler()
+
+# FITTING the scaler with the data
+scaler.fit(big_five_data)
+
+# TRANSFORMING our data after fit
+x_scaled_big_five = scaler.transform(big_five_data)
+
+# converting scaled data into a DataFrame
+big_five_scaled = pd.DataFrame(x_scaled_big_five)
+
+# reattaching column names
+big_five_scaled.columns = big_five_data.columns</code></pre>
+</doc-codeblock></div>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-python"><code v-pre class="language-python"># INSTANTIATING a StandardScaler() object
+scaler = StandardScaler()
+
+# FITTING the scaler with the data
+scaler.fit(hult_dna_data)
+
+# TRANSFORMING our data after fit
+x_scaled_hult = scaler.transform(hult_dna_data)
+
+# converting scaled data into a DataFrame
+hult_scaled = pd.DataFrame(x_scaled_hult)
+
+# reattaching column names
+hult_scaled.columns = hult_dna_data.columns</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="pca-analysis">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#pca-analysis">#</doc-anchor-trigger>
+        <span>PCA Analysis</span>
+    </h3>
+</doc-anchor-target>
+<doc-anchor-target id="big-five">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#big-five">#</doc-anchor-trigger>
+        <span>Big Five</span>
+    </h4>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-python"><code v-pre class="language-python"># INSTANTIATING a PCA object with no limit to principal components
+pca1 = PCA(n_components = 3,
+           random_state = 219)
+
+# FITTING and TRANSFORMING the scaled data
+big_five_pca = pca1.fit_transform(big_five_scaled)
+
+## COMMENT out screeplot display
+# see from None -&gt; 3
+# scree_plot(pca_object = pca1)</code></pre>
+</doc-codeblock></div>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-python"><code v-pre class="language-python"># transposing pca components
+big_five_factor_load = pd.DataFrame(np.transpose(pca1.components_))
+
+# naming rows as original features
+big_five_factor_load = big_five_factor_load.set_index(big_five_scaled.columns)
+
+big_five_factor_load</code></pre>
+</doc-codeblock></div>
+<table>
+<thead>
+  <tr align="right">
+    <th>&nbsp;</th>
+    <th>0</th>
+    <th>1</th>
+    <th>2</th>
+  </tr>
+</thead>
+<tbody>
+  <tr align="right">
+    <td><b>Extrovert</b></td>
+    <td>-0.09324</td>
+    <td>0.712502</td>
+    <td>-0.578286</td>
+  </tr>
+  <tr align="right">
+    <td><b>Agreeable</b></td>
+    <td>-0.593184</td>
+    <td>0.245965</td>
+    <td>0.060705</td>
+  </tr>
+  <tr align="right">
+    <td><b>Conscientious</b></td>
+    <td>-0.618922</td>
+    <td>-0.12819</td>
+    <td>-0.181746</td>
+  </tr>
+  <tr align="right">
+    <td><b>Neurotic</b></td>
+    <td>-0.379619</td>
+    <td>-0.586408</td>
+    <td>-0.303238</td>
+  </tr>
+  <tr align="right">
+    <td><b>Open</b></td>
+    <td>-0.335058</td>
+    <td>0.26746</td>
+    <td>0.732745</td>
+  </tr>
+</tbody>
+</table>
+<doc-anchor-target id="results-from-the-behaviors-each-type-represent">
+    <h5>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#results-from-the-behaviors-each-type-represent">#</doc-anchor-trigger>
+        <span><u> Results from the Behaviors Each Type Represent </u></span>
+    </h5>
+</doc-anchor-target>
+<p><strong>Type 0 - Cautiously Opinionated</strong></p>
+<ul>
+<li>Challenging/Detached, Easy-Going/Careless</li>
+</ul>
+<p><strong>Type 1 - Friendly</strong></p>
+<ul>
+<li>Outgoing/Energetic, Sensitive/Nervous</li>
+</ul>
+<p><strong>Type 2 - Curious Introvert</strong></p>
+<ul>
+<li>Curious/Inventive, Solidarity/Reserved</li>
+</ul>
+<doc-anchor-target id="hult">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#hult">#</doc-anchor-trigger>
+        <span>Hult</span>
+    </h4>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-python"><code v-pre class="language-python"># INSTANTIATING a PCA object with no limit to principal components
+pca2 = PCA(n_components = None,
+           random_state = 219)
+
+# FITTING and TRANSFORMING the scaled data
+hult_pca = pca2.fit_transform(hult_scaled)
+
+## COMMENT out screeplot display
+# see from None, that we need only 3 components
+# scree_plot(pca_object = pca2)</code></pre>
+</doc-codeblock></div>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-python"><code v-pre class="language-python"># transposing pca components
+hult_factor_load = pd.DataFrame(np.transpose(pca2.components_))
+
+# naming rows as original features
+hult_factor_load = hult_factor_load.set_index(hult_scaled.columns)
+
+hult_factor_load</code></pre>
+</doc-codeblock></div>
+<table>
+<thead>
+  <tr align="right">
+    <th>&nbsp;</th>
+    <th>0</th>
+    <th>1</th>
+    <th>2</th>
+  </tr>
+</thead>
+<tbody>
+  <tr align="right">
+    <td><b>Thinking</b></td>
+    <td>-0.565094</td>
+    <td>-0.800267</td>
+    <td>-0.200604</td>
+  </tr>
+  <tr align="right">
+    <td><b>Communicating</b></td>
+    <td>-0.588484</td>
+    <td>0.220565</td>
+    <td>0.777841</td>
+  </tr>
+  <tr align="right">
+    <td><b>Team-Building</b></td>
+    <td>-0.578234</td>
+    <td>0.557606</td>
+    <td>-0.595584</td>
+  </tr>
+</tbody>
+</table>
+<doc-anchor-target id="results-from-the-behaviors-each-type-represent-1">
+    <h5>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#results-from-the-behaviors-each-type-represent-1">#</doc-anchor-trigger>
+        <span><u> Results from the Behaviors Each Type Represent </u></span>
+    </h5>
+</doc-anchor-target>
+<p><strong>Type 0 - Opinionated</strong></p>
+<ul>
+<li>Fixed Mindset</li>
+<li>Their Opinion Matters</li>
+<li>Works Alone</li>
+</ul>
+<p><strong>Type 1 - Team Leader</strong></p>
+<ul>
+<li>Fixed Mindset</li>
+<li>Team Player, Average Communicator</li>
+</ul>
+<p><strong>Type 2 - Debater</strong></p>
+<ul>
+<li>Communicates ideas</li>
+<li>Not a team player</li>
+</ul>
+<doc-anchor-target id="clustering">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#clustering">#</doc-anchor-trigger>
+        <span>Clustering</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-python"><code v-pre class="language-python">big_five_pca_col = ['Cautiously Opinionated',
+                    'Friendly',
+                    'Curious Introvert']
+
+# analyzing factor strengths per customer
+big_five_pca = pca1.transform(big_five_scaled)
+
+# converting to a DataFrame
+big_five_pca_df = pd.DataFrame(big_five_pca)
+
+# renaming columns
+big_five_pca_df.columns = big_five_pca_col</code></pre>
+</doc-codeblock></div>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-python"><code v-pre class="language-python">hult_pca_col = ['Opinionated',
+                'Team Leader',
+                'Debater']
+
+# analyzing factor strengths per customer
+hult_pca = pca2.transform(hult_scaled)
+
+# converting to a DataFrame
+hult_pca_df = pd.DataFrame(hult_pca)
+
+# renaming columns
+hult_pca_df.columns = hult_pca_col</code></pre>
+</doc-codeblock></div>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-python"><code v-pre class="language-python"># INSTANTIATING a StandardScaler() object
+scaler = StandardScaler()
+
+# FITTING the scaler with the data
+scaler.fit(big_five_pca_df)
+
+# TRANSFORMING our data after fit
+big_five_scaled_pca = scaler.transform(big_five_pca_df)
+
+# converting scaled data into a DataFrame
+big_five_pca_scaled = pd.DataFrame(big_five_scaled_pca)
+
+# reattaching column names
+big_five_pca_scaled.columns = big_five_pca_col</code></pre>
+</doc-codeblock></div>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-python"><code v-pre class="language-python"># INSTANTIATING a StandardScaler() object
+scaler = StandardScaler()
+
+# FITTING the scaler with the data
+scaler.fit(hult_pca_df)
+
+# TRANSFORMING our data after fit
+hult_scaled_pca = scaler.transform(hult_pca_df)
+
+# converting scaled data into a DataFrame
+hult_pca_scaled = pd.DataFrame(hult_scaled_pca)
+
+# reattaching column names
+hult_pca_scaled.columns = hult_pca_col</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="big-five-1">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#big-five-1">#</doc-anchor-trigger>
+        <span>Big Five</span>
+    </h4>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-python"><code v-pre class="language-python"># grouping data based on Ward distance
+standard_mergings_ward = linkage(y = big_five_pca_scaled,
+                                 method = 'ward',
+                                 optimal_ordering = True)
+
+# setting plot size
+fig, ax = plt.subplots(figsize=(12, 12))
+
+# developing a dendrogram
+dendrogram(Z = standard_mergings_ward,
+           leaf_rotation = 90,
+           leaf_font_size = 6)
+
+plt.show()</code></pre>
+</doc-codeblock></div>
+<img src="../images/dendrogram-1.png" style="zoom:17%;" />
+<br>
+<br>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-python"><code v-pre class="language-python">## COMMENT out screeplot display
+# see that 
+# calling the inertia_plot() function
+# interia_plot(data = big_five_pca_scaled)</code></pre>
+</doc-codeblock></div>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-python"><code v-pre class="language-python"># INSTANTIATING a k-Means object with clusters
+big_five_k_pca = KMeans(n_clusters   = 4,
+                        random_state = 219)
+
+# fitting the object to the data
+big_five_k_pca.fit(big_five_pca_scaled)
+
+# converting the clusters to a DataFrame
+big_five_kmeans_pca = pd.DataFrame({'Cluster': big_five_k_pca.labels_})
+
+# checking the results
+print(big_five_kmeans_pca.iloc[: , 0].value_counts())
+
+# storing cluster centers
+big_five_centroids_pca = big_five_k_pca.cluster_centers_
+
+# converting cluster centers into a DataFrame
+big_five_centroids_pca_df = pd.DataFrame(big_five_centroids_pca)
+
+# renaming principal components
+big_five_centroids_pca_df.columns = big_five_pca_col
+
+# checking results (clusters = rows, pc = columns)
+big_five_centroids_pca_df.round(2)</code></pre>
+</doc-codeblock></div>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">2    48
+1    35
+0    29
+3    25
+Name: Cluster, dtype: int64</code></pre>
+</doc-codeblock></div>
+<table>
+<thead>
+  <tr align="right">
+    <th>&nbsp;</th>
+    <th><b>Cautiously Opinionated</b></th>
+    <th><b>Friendly</b></th>
+    <th><b>Curious Introvert</b></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td align="center"><b>0</b></td>
+    <td align="right">-0.45</td>
+    <td align="right">-0.95</td>
+    <td align="right">0.93</td>
+  </tr>
+  <tr>
+    <td align="center"><b>1</b></td>
+    <td align="right">0.9</td>
+    <td align="right">-0.58</td>
+    <td align="right">-0.64</td>
+  </tr>
+  <tr>
+    <td align="center"><b>2</b></td>
+    <td align="right">-0.8</td>
+    <td align="right">0.5</td>
+    <td align="right">-0.45</td>
+  </tr>
+  <tr>
+    <td align="center"><b>3</b></td>
+    <td align="right">0.79</td>
+    <td align="right">0.96</td>
+    <td align="right">0.68</td>
+  </tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Cluster 0</strong> contains more curious introverts</li>
+<li><strong>Cluster 1</strong> contains more cautiously opinionated individuals</li>
+<li><strong>Cluster 2</strong> contains more friendly individuals</li>
+<li><strong>Cluster 3</strong> contains a combination of all three, which exemplifies team leaders that think carefully to themselves and can help lead.</li>
+</ul>
+<doc-anchor-target id="hult-1">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#hult-1">#</doc-anchor-trigger>
+        <span>Hult</span>
+    </h4>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-python"><code v-pre class="language-python"># grouping data based on Ward distance
+standard_mergings_ward = linkage(y = hult_pca_scaled,
+                                 method = 'ward',
+                                 optimal_ordering = True)
+
+# setting plot size
+fig, ax = plt.subplots(figsize=(12, 12))
+
+# developing a dendrogram
+dendrogram(Z = standard_mergings_ward,
+           leaf_rotation = 90,
+           leaf_font_size = 6)
+
+plt.show()</code></pre>
+</doc-codeblock></div>
+<img src="../images/dendrogram-2.png" style="zoom:17%;" /> 
+<br>
+<br>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-python"><code v-pre class="language-python"># calling the inertia_plot() function
+# interia_plot(data = hult_pca_scaled)</code></pre>
+</doc-codeblock></div>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-python"><code v-pre class="language-python"># INSTANTIATING a k-Means object with clusters
+hult_k_pca = KMeans(n_clusters   = 5,
+                    random_state = 219)
+
+# fitting the object to the data
+hult_k_pca.fit(hult_pca_scaled)
+
+# converting the clusters to a DataFrame
+hult_kmeans_pca = pd.DataFrame({'Cluster': hult_k_pca.labels_})
+
+# # checking the results
+# print(hult_kmeans_pca.iloc[: , 0].value_counts())
+
+# storing cluster centers
+hult_centroids_pca = hult_k_pca.cluster_centers_
+
+# converting cluster centers into a DataFrame
+hult_centroids_pca_df = pd.DataFrame(hult_centroids_pca)
+
+# renaming principal components
+hult_centroids_pca_df.columns = hult_pca_col
+
+# checking results (clusters = rows, pc = columns)
+hult_centroids_pca_df.round(2)</code></pre>
+</doc-codeblock></div>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">0    38
+1    31
+2    26
+4    22
+3    20
+Name: Cluster, dtype: int64</code></pre>
+</doc-codeblock></div>
+<table>
+<thead>
+  <tr align="right">
+    <th>&nbsp;</th>
+    <th><b>Opinionated</b></th>
+    <th><b>Team Leader</b></th>
+    <th><b>Debater</b></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td align="center"><b>0</b></td>
+    <td align="right">-0.64</td>
+    <td align="right">-0.47</td>
+    <td align="right">0.73</td>
+  </tr>
+  <tr>
+    <td align="center"><b>1</b></td>
+    <td align="right">0.45</td>
+    <td align="right">1.18</td>
+    <td align="right">0.1</td>
+  </tr>
+  <tr>
+    <td align="center"><b>2</b></td>
+    <td align="right">-1</td>
+    <td align="right">0.37</td>
+    <td align="right">-0.83</td>
+  </tr>
+  <tr>
+    <td align="center"><b>3</b></td>
+    <td align="right">1.32</td>
+    <td align="right">-0.39</td>
+    <td align="right">0.7</td>
+  </tr>
+  <tr>
+    <td align="center"><b>4</b></td>
+    <td align="right">0.46</td>
+    <td align="right">-0.93</td>
+    <td align="right">-1.06</td>
+  </tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Cluster 0</strong> contains more debaters</li>
+<li><strong>Cluster 1</strong> contains more team leaders that have the final say</li>
+<li><strong>Cluster 2</strong> contains team leaders who are more attentive to other team members</li>
+<li><strong>Cluster 3</strong> contains more opinionated, vocal individuals</li>
+<li><strong>Cluster 4</strong> contains more opinionated, silent individuals</li>
+</ul>
+<doc-anchor-target id="creating-final-cluster-datasets">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#creating-final-cluster-datasets">#</doc-anchor-trigger>
+        <span>Creating Final Cluster Datasets</span>
+    </h4>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-python"><code v-pre class="language-python"># concatenating cluster memberships with principal components
+clst_big_five_pca_df = pd.concat([big_five_kmeans_pca,
+                                  big_five_pca_df],
+                                 axis = 1)
+# checking results
+clst_big_five_pca_df
+
+# concatenating demographic information with pca-clusters
+final_big_five_df = pd.concat([dem_data, laptop_data, clst_big_five_pca_df],
+                              axis = 1)
+# replace cluster numbers with descriptions
+cluster_names = {0 : 'Cluster 1',
+                 1 : 'Cluster 2',
+                 2 : 'Cluster 3',
+                 3 : 'Cluster 4'}
+
+final_big_five_df['Cluster'].replace(cluster_names, inplace = True)
+
+# renaming columns
+big_five_pca_cluster_col = ['Program', 
+                            'Age', 'Gender', 'Nationality', 'Ethnicity',
+                            'Current Laptop', 'Want Laptop',
+                            'Cluster'] + big_five_pca_col
+
+final_big_five_df.columns = big_five_pca_cluster_col
+
+# final_big_five_df</code></pre>
+</doc-codeblock></div>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-python"><code v-pre class="language-python"># concatenating cluster memberships with principal components
+clst_hult_pca_df = pd.concat([hult_kmeans_pca,
+                              hult_pca_df],
+                             axis = 1)
+
+# concatenating demographic information with pca-clusters
+final_hult_df = pd.concat([dem_data, laptop_data, clst_hult_pca_df],
+                          axis = 1)
+
+# replace cluster numbers with descriptions
+cluster_names = {0 : 'Cluster 1',
+                 1 : 'Cluster 2',
+                 2 : 'Cluster 3',
+                 3 : 'Cluster 4',
+                 4 : 'Cluster 5'}
+
+final_hult_df['Cluster'].replace(cluster_names, inplace = True)
+
+# renaming columns
+hult_pca_cluster_col = ['Program', 
+                        'Age', 'Gender', 'Nationality', 'Ethnicity',
+                        'Current Laptop', 'Want Laptop',
+                        'Cluster'] + hult_pca_col
+
+final_hult_df.columns = hult_pca_cluster_col
+
+# final_hult_df</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="hult-dna-insights">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#hult-dna-insights">#</doc-anchor-trigger>
+        <span>Hult DNA Insights</span>
+    </h2>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-python"><code v-pre class="language-python">fig, ax = plt.subplots(figsize=(20, 20))
+count = 0
+
+for characteristic in hult_pca_col:
+    count += 1
+    plt.subplot(3, 2, count)
+    sns.boxplot(x = 'Current Laptop',
+                y = characteristic,
+                hue = 'Cluster',
+                data = final_hult_df,
+                palette = 'Spectral')
+    plt.axhline(y = 0, color = 'red')
+
+    count += 1
+    plt.subplot(3, 2, count)
+    sns.boxplot(x = 'Want Laptop',
+                y = characteristic,
+                hue = 'Cluster',
+                data = final_hult_df,
+                palette = 'Spectral')
+    plt.axhline(y = 0, color = 'red')</code></pre>
+</doc-codeblock></div>
+<p><figure class="content-center">
+    <img src="../images/boxplot-1.png" alt="" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p><strong>CONCLUSION</strong></p>
+<p>From the boxplot above, there is not as much a difference in behavior from the laptop they currently have and the laptop they want. This could be a small number and so we need to look at which cluster contains the most amount of Macs.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-python"><code v-pre class="language-python">fig, ax = plt.subplots(figsize=(12,7))
+
+# plot current laptop count based off clusters
+plt.subplot(1, 2, 1)
+current_laptop = sns.countplot(x = 'Cluster',
+                               hue = 'Current Laptop',
+                               data = final_hult_df,
+                               order = [&quot;Cluster 1&quot;, &quot;Cluster 2&quot;, &quot;Cluster 3&quot;, 
+                                        &quot;Cluster 4&quot;, &quot;Cluster 5&quot;],
+                               palette = 'Spectral')
+# display count on top of bar
+for bar in current_laptop.patches: 
+    current_laptop.annotate(format(bar.get_height(), 'n'),  
+                         (bar.get_x() + bar.get_width() / 2, bar.get_height()), 
+                         ha = 'center', va = 'center', 
+                         size = 10, xytext = (0, 6), 
+                         textcoords = 'offset points')
+
+plt.subplot(1, 2, 2)
+# plot laptop they want count based off clusters
+want_laptop = sns.countplot(x = 'Cluster',
+                            hue = 'Want Laptop',
+                            order = [&quot;Cluster 1&quot;, &quot;Cluster 2&quot;, &quot;Cluster 3&quot;, 
+                                     &quot;Cluster 4&quot;, &quot;Cluster 5&quot;],
+                            data = final_hult_df,
+                            palette = 'Spectral')
+# display count on top of bar
+for bar in want_laptop.patches: 
+    want_laptop.annotate(format(bar.get_height(), 'n'),  
+                         (bar.get_x() + bar.get_width() / 2, bar.get_height()), 
+                         ha = 'center', va = 'center', 
+                         size = 10, xytext = (0, 6), 
+                         textcoords = 'offset points')</code></pre>
+</doc-codeblock></div>
+<img src="../images/countplot-1.png" style="zoom:18%;" />
+<br><br>
+<p><strong>CONCLUSION</strong></p>
+<ul>
+<li>Cluster 1, 2, and 3 are most likely to purchase a Mac.</li>
+<li>Cluster 4 is most likely to switch to a PC.</li>
+</ul>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-python"><code v-pre class="language-python">plt.figure(figsize=(8, 8))
+hult_program = sns.countplot(x = 'Cluster',
+                             hue = 'Program',
+                             data = final_hult_df,
+                             palette = 'Spectral')
+for bar in hult_program.patches: 
+    hult_program.annotate(format(bar.get_height(), 'n'),  
+                         (bar.get_x() + bar.get_width() / 2, bar.get_height()), 
+                         ha = 'center', va = 'center', 
+                         size = 10, xytext = (0, 6), 
+                         textcoords = 'offset points')
+plt.show()</code></pre>
+</doc-codeblock></div>
+<img src="../images/countplot-2.png" style="zoom:21%;" /> 
+<br><br>
+<p><strong>CONCLUSION</strong></p>
+<ul>
+<li>Cluster 1 primarily has DD (MIB and Business Analytics) students.</li>
+<li>Characteristics of MIB and Business Analytics student should demonstrate:
+<ul>
+<li>Leadership and Teamwork skills</li>
+<li>Analytical skills</li>
+</ul>
+</li>
+</ul>
+<doc-anchor-target id="big-five-insights">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#big-five-insights">#</doc-anchor-trigger>
+        <span>Big Five Insights</span>
+    </h2>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-python"><code v-pre class="language-python">fig, ax = plt.subplots(figsize=(20, 20))
+count = 0
+
+for characteristic in big_five_pca_col:
+    count += 1
+    plt.subplot(4, 2, count)
+    sns.boxplot(x = 'Current Laptop',
+                y = characteristic,
+                hue = 'Cluster',
+                data = final_big_five_df,
+                palette = 'Spectral')
+    plt.axhline(y = 0, color = 'red')
+
+    count += 1
+    plt.subplot(4, 2, count)
+    sns.boxplot(x = 'Want Laptop',
+                y = characteristic,
+                hue = 'Cluster',
+                data = final_big_five_df,
+                palette = 'Spectral')
+    plt.axhline(y = 0, color = 'red')</code></pre>
+</doc-codeblock></div>
+<p><figure class="content-center">
+    <img src="../images/boxplot-2.png" alt="" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p><strong>CONCLUSION</strong></p>
+<p>Similar to Hult DNA, there is not as much a difference in behavior from the laptop they currently have and the laptop they want. This could be a small number and so we need to look at which cluster contains the most amount of Macs. There is a small outlier in which students prefer a chromebook over an Apple or a Windows product. We will consider these outliers for our dataset as it represents only 2% of the population.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-python"><code v-pre class="language-python">fig, ax = plt.subplots(figsize=(12,7))
+
+# plot current laptop count based off clusters
+plt.subplot(1, 2, 1)
+current_laptop = sns.countplot(x = 'Cluster',
+                               hue = 'Current Laptop',
+                               data = final_big_five_df,
+                               order = [&quot;Cluster 1&quot;, &quot;Cluster 2&quot;, &quot;Cluster 3&quot;, 
+                                        &quot;Cluster 4&quot;, &quot;Cluster 5&quot;],
+                               palette = 'Spectral')
+# display count on top of bar
+for bar in current_laptop.patches: 
+    current_laptop.annotate(format(bar.get_height(), 'n'),  
+                         (bar.get_x() + bar.get_width() / 2, bar.get_height()), 
+                         ha = 'center', va = 'center', 
+                         size = 10, xytext = (0, 6), 
+                         textcoords = 'offset points')
+
+plt.subplot(1, 2, 2)
+# plot laptop they want count based off clusters
+want_laptop = sns.countplot(x = 'Cluster',
+                            hue = 'Want Laptop',
+                            order = [&quot;Cluster 1&quot;, &quot;Cluster 2&quot;, &quot;Cluster 3&quot;, 
+                                     &quot;Cluster 4&quot;, &quot;Cluster 5&quot;],
+                            data = final_big_five_df,
+                            palette = 'Spectral')
+# display count on top of bar
+for bar in want_laptop.patches: 
+    want_laptop.annotate(format(bar.get_height(), 'n'),  
+                         (bar.get_x() + bar.get_width() / 2, bar.get_height()), 
+                         ha = 'center', va = 'center', 
+                         size = 10, xytext = (0, 6), 
+                         textcoords = 'offset points')</code></pre>
+</doc-codeblock></div>
+<img src="../images/countplot-3.png" style="zoom: 18%;" />
+<br><br>
+<p><strong>CONCLUSION</strong></p>
+<ul>
+<li>Cluster 1 and 3 bring more opportunity for Windows users to switch to use Apple products.</li>
+</ul>
+<doc-anchor-target id="general-insights">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#general-insights">#</doc-anchor-trigger>
+        <span>General Insights</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li>From the data, 68 people have a Windows laptop and 69 have a Macbook, from the Windows owners 14 would acquire a Macbook in the future, representing 20%.</li>
+<li>But people who were already the Macbook only 6 would not acquire it again, representing 8%.</li>
+</ul>
+<hr />
+<p>Based on the Big 5 Personality Test, participants showed these personalities:</p>
+<ul>
+<li><strong>Cautiously Opinionated</strong>
+<ul>
+<li>Challenging/Detached, Easy-Going/Careless</li>
+</ul>
+</li>
+<li><strong>Friendly</strong>
+<ul>
+<li>Outgoing/Energetic, Sensitive/Nervous</li>
+</ul>
+</li>
+<li><strong>Curious Introvert</strong>
+<ul>
+<li>Curious/Inventive, Solidarity/Reserved</li>
+</ul>
+</li>
+</ul>
+<hr />
+<p>Based on the Hult DNA Test, participants showed these personalities</p>
+<ul>
+<li><strong>Opinionated</strong>
+<ul>
+<li>Fixed Mindset</li>
+<li>Their Opinion Matters</li>
+<li>Works Alone</li>
+</ul>
+</li>
+<li><strong>Team Leader</strong>
+<ul>
+<li>Fixed Mindset</li>
+<li>Team Player, Average Communicator</li>
+</ul>
+</li>
+<li><strong>Debater</strong>
+<ul>
+<li>Communicates ideas</li>
+<li>Not a team player</li>
+</ul>
+</li>
+</ul>
+<hr />
+<p>There are three potential markets here:</p>
+<ol>
+<li>People who already own a Macbook are likely to get a Macbook due to feasibility of integrating all Apple products with Apple&#x27;s ecosystem.</li>
+<li>People that are more curious and open to trying something new are more likely to buy a Macbook. Those are are more curious, then to be critical thinkers and like potential market 1, see that there is an better quality of life when introduced to the Apple Ecosystem.</li>
+<li>People that are more friendly and social are more likely to buy a Macbook. Another aspect that is not considered in market 1 and 2 is security. Based off of company history, Apple is known to care for its customer&#x27;s privacy over Microsoft&#x27;s products.</li>
+</ol>
+<hr />
+<p>Apple should create marketing campaigns that emphasize the feasibility of joining the Apple ecosystem. By doing so, you are advertising to the headstrong Apple believers and convincing the critical thinkers and convert them to the headstrong Apple believers.</p>
+<p>You are also advertising to the friendly, social population as they will see the feasibility of talking to others via all the Apple products (iPhone, Mac, etc.). They will see that not only is it easy to reach out to others, but also feel secure with their privacy information.</p>
+<p>This represents around <strong>56%</strong> of the survey participants when answering the questions from the Personality Test.</p>
+<hr />
+<doc-anchor-target id="bibliography">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#bibliography">#</doc-anchor-trigger>
+        <span>Bibliography</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li><p>Big Five: Goldberg, L. R. (1992). The development of markers for the Big-Five factor structure. Psychological Assessment, 4, 26-42</p>
+</li>
+<li><p>Kaspersky. (2020, August 26). Mac vs PC Security: How You Can Stay Safe. Retrieved from <a href="https://usa.kaspersky.com/resource-center/threats/mac-vs-pc-security">https://usa.kaspersky.com/resource-center/threats/mac-vs-pc-security</a></p>
+</li>
+<li><p>Hult DNA Skills Framework Development Guide 2020 - 2021</p>
+</li>
+</ul>
+
+    
+                <!-- Required only on API pages -->
+                <doc-toolbar-member-filter-no-results />
+            </div>
+
+            
+<nav class="flex mt-14">
+    <div class="w-1/2">
+        <a class="px-6 py-4 h-full flex items-center break-all md:break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r rounded-l-lg transition-colors duration-150 relative hover:z-5" href="/featured_projects/twitter_text_analytics">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+            <span>
+                <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
+                <span class="block mt-1">Twitter Text Analytics</span>
+            </span>
+        </a>
+    </div>
+
+    <div class="w-1/2">
+    </div>
+</nav>
+
+
+        </main>
+
+        <div class="border-t dark:border-dark-650 pt-6 mb-8">
+            <footer class="flex flex-wrap items-center justify-between">
+    <div>
+        <ul class="flex flex-wrap items-center text-sm">
+</ul>
+
+    </div>
+    <div class="docs-copyright py-2 text-gray-500 dark:text-dark-350 text-sm leading-relaxed"><p>© Copyright 2021. All rights reserved.</p>
+</div>
+</footer>
+
+        </div>
+    </div>
+    
+    <!-- Rendered if sidebar right is enabled -->
+    <!-- Sidebar right skeleton-->
+    <div v-cloak class="fixed top-0 bottom-0 right-0 transform translate-x-full bg-white border-gray-200 lg:sticky lg:border-l lg:flex-shrink-0 lg:pt-6 lg:transform-none lg:w-56 lg:z-0 md:w-72 sidebar-right skeleton dark:bg-dark-850 dark:border-dark-650">
+        <div class="pl-5">
+            <div class="w-32 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+            <div class="w-48 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+            <div class="w-40 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+        </div>
+    </div>
+    
+    <!-- User should be able to hide sidebar right -->
+    <doc-sidebar-right v-cloak></doc-sidebar-right>
+</div>
+
+        </div>
+    </div>
+
+    <doc-search-mobile></doc-search-mobile>
+    <doc-back-to-top></doc-back-to-top>
+</div>
+
+
+        <div id="docs-overlay-target"></div>
+
+        <script>window.__DOCS__ = { "title": "Windows ? or Mac ?", icon: "file" }</script>
+    </body>
+</html>

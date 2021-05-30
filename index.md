@@ -4,6 +4,8 @@ icon: clippy
 
 # Index
 
+The entire index of projects
+
 ||| Python
 
 - [Apprentice Chef Analysis](https://marvin-jung.github.io/portfolio/featured_projects/apprentice_chef_analysis_report/)
@@ -21,3 +23,6 @@ icon: clippy
 - [Presenting the Data Strategy for 23andMe](https://marvin-jung.github.io/portfolio/more_projects/presenting_the_data_strategy_for_23andme/)
 |||
 
+!!!warning Notice
+Original script download not available temporary
+!!!

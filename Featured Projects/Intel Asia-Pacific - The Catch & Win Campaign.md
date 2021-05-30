@@ -13,10 +13,7 @@ icon: megaphone
 
 +++
 
-<figure>
-<img src="images/asia-map.jpg">
-<figcaption align="center"> < Unsplash photo by dead____artist > </figcaption>
-</figure>
+![Photo by dead____artist on Unsplash](images/asia-map.jpg)
 
 ## The Catch & Win Campaign Strategy in Asian market
 

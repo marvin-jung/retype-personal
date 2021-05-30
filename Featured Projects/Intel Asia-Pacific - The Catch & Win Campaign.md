@@ -11,7 +11,7 @@ icon: megaphone
 - Sushmasri Takillapati
 +++
 
-![Photo by dead____artist on Unsplash](images/asia-map.jpg)
+![Photo by dead_artist on Unsplash](images/asia-map.jpg)
 
 ## The Catch & Win Campaign Strategy in Asian market
 

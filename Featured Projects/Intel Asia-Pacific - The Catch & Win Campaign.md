@@ -94,7 +94,9 @@ Max impression LP model would be more cost effective as an opening step/strategy
 
 In the coming future, more emphasis must be placed on Mobile Ads in the Indonesian and Pakistan markets because currently there are more people who use mobiles. Indonesia and Pakistan have a much higher figure when it comes to number of mobile users when compared to Internet users, it would be more cost effective to use mobile ads first for those countries. More people have access to the interest with the growing adoption of mobile devices than PC devices meaning we can target their mobile Ads first and non-mobile Ads later.
 
-Close attention must be paid to markets with a high Social Impression Multiplier as these are markets that have most organic reach. Social Impression multiplier refers to the amount of organic attention or reach that an Ad can have. This means that we will have a much larger audience to advertise to in a much more organic way. The more organic and Ad feels, the more a potential customer will be likely to click on the Ad.  Therefore, we should drive more consumers' interest by additional purchase on Mobile Ads in Korea. Without changing any budget constraint, we are able to get higher number of click-throughs and number of impressions than #2 Max. Click-throughs LP Model. 
+Close attention must be paid to markets with a high Social Impression Multiplier as these are markets that have most organic reach. Social Impression multiplier refers to the amount of organic attention or reach that an Ad can have. This means that we will have a much larger audience to advertise to in a much more organic way. The more organic and Ad feels, the more a potential customer will be likely to click on the Ad.  
+
+We should drive more consumers' interest by additional purchase on Mobile Ads in Korea. Without changing any budget constraint, we are able to get higher number of click-throughs and number of impressions than #2 Max. Click-throughs LP Model. 
 
 ## Takeaways
 

@@ -23,6 +23,3 @@ The entire index of data science and programming language projects
 - [Presenting the Data Strategy for 23andMe](more-projects/presenting-the-data-strategy-for-23andme/)
 +++
 
-!!!warning Notice
-Original script download is not available temporary
-!!!

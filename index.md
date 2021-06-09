@@ -8,20 +8,20 @@ The entire index of data science and programming language projects
 
 +++ Python
 
-- [Apprentice Chef Analysis](https://marvin-jung.github.io/portfolio/featured_projects/apprentice_chef_analysis_report/)
-- [Windows ? or Mac?](https://marvin-jung.github.io/portfolio/featured_projects/windows_or_mac/)
-- [Yoshimi Battles the Pink Robot](https://marvin-jung.github.io/portfolio/more_projects/yoshimi_battles_the_pink_robot/)
+- [Apprentice Chef Analysis](https://marvin-jung.github.io/portfolio/featured-projects/apprentice-chef-analysis-report/)
+- [Windows ? or Mac?](https://marvin-jung.github.io/portfolio/featured-projects/windows-or-mac/)
+- [Yoshimi Battles the Pink Robot](https://marvin-jung.github.io/portfolio/more-projects/yoshimi-battles-the-pink-robot/)
 +++ R
-- [Air France Business Case](https://marvin-jung.github.io/portfolio/more_projects/air_france_business_case/)
-- [NLP Analysis](https://marvin-jung.github.io/portfolio/more_projects/nlp_analysis/)
-- [Tweets Text Analytics](https://marvin-jung.github.io/portfolio/featured_projects/tweets_text_analytics/)
+- [Air France Business Case](https://marvin-jung.github.io/portfolio/more-projects/air-france-business-case/)
+- [NLP Analysis](https://marvin-jung.github.io/portfolio/more-projects/nlp-analysis/)
+- [Tweets Text Analytics](https://marvin-jung.github.io/portfolio/featured-projects/tweets-text-analytics/)
 +++ Tableau
-- [NUS - Visual Data Storytelling](https://marvin-jung.github.io/portfolio/more_projects/nus_-_visual_data_storytelling/)
-- [Superstore Interactive Dashboard](https://marvin-jung.github.io/portfolio/featured_projects/superstore_interactive_dashboard/)
+- [NUS - Visual Data Storytelling](https://marvin-jung.github.io/portfolio/more-projects/nus---visual-data-storytelling/)
+- [Superstore Interactive Dashboard](https://marvin-jung.github.io/portfolio/featured-projects/superstore-interactive-dashboard/)
 +++ Excel
-- [Intel Asia-Pacific : The Catch & Win Campaign](https://marvin-jung.github.io/portfolio/featured_projects/intel_asia-pacific_-_the_catch__win_campaign/)
+- [Intel Asia-Pacific : The Catch & Win Campaign](https://marvin-jung.github.io/portfolio/featured-projects/intel-asia-pacific---the-catch--win-campaign/)
 +++ PPT
-- [Presenting the Data Strategy for 23andMe](https://marvin-jung.github.io/portfolio/more_projects/presenting_the_data_strategy_for_23andme/)
+- [Presenting the Data Strategy for 23andMe](https://marvin-jung.github.io/portfolio/more-projects/presenting-the-data-strategy-for-23andme/)
 +++
 
 !!!warning Notice

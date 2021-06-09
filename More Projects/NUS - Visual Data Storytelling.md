@@ -4,13 +4,13 @@ icon: mortar-board
 
 # NUS - Visual Data Storytelling
 
-++- Hult SF MsBA2 - Team 7
+==- Hult SF MsBA2 - Team 7
 - Ching Chih Chang
 - Ching-Yi Shih
 - Jisung Jung
 - Karina Arevalo Ramirez-Gaston
 - Maximiliano Mardoff
-+++
+===
 
 ![](images/NUS-visual-data-storytelling.jpg)
 

@@ -7,20 +7,20 @@ icon: clippy
 The entire index of data science and programming language projects
 
 +++ Python
-- [Apprentice Chef Analysis](featured-projects/apprentice-chef-analysis-report/)
-- [Windows ? or Mac?](featured-projects/windows-or-mac/)
-- [Yoshimi Battles the Pink Robot](more-projects/yoshimi-battles-the-pink-robot/)
+- [Apprentice Chef Analysis](<Featured Projects/Apprentice Chef Analysis Report.md>)
+- [Windows ? or Mac?](<Featured Projects/Windows or Mac.md>)
+- [Yoshimi Battles the Pink Robot](<More Projects/Yoshimi Battles the Pink Robot.md>)
 +++ R
-- [Air France Business Case](more-projects/air-france-business-case/)
-- [NLP Analysis](more-projects/nlp-analysis/)
-- [Tweets Text Analytics](featured-projects/tweets-text-analytics/)
+- [Air France Business Case](<More Projects/Air France Business Case.md>)
+- [NLP Analysis](<More Projects/NLP Analysis.md>)
+- [Tweets Text Analytics](<Featured Projects/Tweets Text Analytics.md>)
 +++ Tableau
-- [NUS - Visual Data Storytelling](more-projects/nus---visual-data-storytelling/)
-- [Superstore Interactive Dashboard](featured-projects/superstore-interactive-dashboard/)
+- [NUS - Visual Data Storytelling](<More Projects/NUS - Visual Data Storytelling.md>)
+- [Superstore Interactive Dashboard](<Featured Projects/Superstore Interactive Dashboard.md>)
 +++ Excel
-- [Intel Asia-Pacific : The Catch & Win Campaign](featured-projects/intel-asia-pacific---the-catch--win-campaign/)
+- [Intel Asia-Pacific : The Catch & Win Campaign](<Featured Projects/Intel Asia-Pacific - The Catch & Win Campaign.md>)
 +++ PPT
-- [Presenting the Data Strategy for 23andMe](more-projects/presenting-the-data-strategy-for-23andme/)
+- [Presenting the Data Strategy for 23andMe](<More Projects/Presenting the Data Strategy for 23andMe.md>)
 +++
 
 !!!warning Notice
